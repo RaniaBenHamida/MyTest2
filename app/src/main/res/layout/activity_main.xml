@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.MainActivity"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAstro"
+
+            android:gravity="center">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/SpinKitView.Small.DoubleBounce"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:SpinKit_Color="@color/colorAccent" tools:ignore="MissingConstraints"/>
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listViewAstros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
